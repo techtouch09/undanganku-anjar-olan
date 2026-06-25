@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Anjar & Olan</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Halaman Pembuka / Cover -->
+    <div id="cover" class="cover">
+        <div class="oval-frame">
+            <p class="text-small">Tasyakuran Pernikahan</p>
+            <h1 class="couple-names">Anjar <span>&</span> Olan</h1>
+            <p class="text-greeting">Kepada Yth;</p>
+            <p class="text-guest">Bapak/Ibu/Saudara/i</p>
+            <p class="text-guest-name">Tamu Undangan</p>
+            <button id="btnBuka" class="btn-open">Buka Undangan</button>
+        </div>
+    </div>
+    
+
+    <!-- Isi Undangan -->
+    <div id="isiUndangan" class="content hidden">
+
+        <!-- HALAMAN: THE WEDDING OF ANJAR & OLAN -->
+        <section class="section fade-in wedding-of-section">
+            <div class="wedding-of-card">
+                <div class="frame-arch">
+                    <img src="image/foto-pasangan.jpg" alt="Anjar & Olan">
+                </div>
+                <p class="teks-thewedding">Tasyakuran Pernikahan</p>
+                <h2 class="nama-pasangan">Anjar & Olan</h2>
+                <p class="tanggal-pasangan">05 . 07 . 2026</p>
+            </div>
+        </section>
+
+        <!-- HALAMAN: AYAT AL-QUR'AN -->
+        <section class="section fade-in ayat-section">
+            <div class="ayat-card">
+                <div class="inisiall">A|O</div>
+                <p class="ayat-text">
+                    “Wahai manusia! Bertakwalah kepada Tuhanmu yang telah menciptakanmu dari satu jiwa, dan dari padanya Dia menciptakan pasangannya, dan dari keduanya Dia memperbanyak laki-laki dan perempuan yang banyak sekali. Bertakwalah kepada Allah yang dengan nama-Nya kamu saling meminta, dan (peliharalah) hubungan kekeluargaan. Sesungguhnya Allah selalu menjaga dan mengawasimu.”
+                </p>
+                <p class="surah">Surah An-Nisa Ayat 1</p>
+            </div>
+        </section>
+
+        <!-- HALAMAN: MEMPELAI WANITA -->
+        <section class="section fade-in mempelai-section">
+            <div class="mempelai-card">
+                <div class="foto-mempelai">
+                    <img src="image/foto-anjar.JPG" alt="Anjar Afiyatul Jannah">
+                </div>
+                <h2 class="nama-mempelai">Anjar</h2>
+                <h3 class="lengkap-mempelai">Anjar Afiyatul Jannah, S.M</h3>
+                <p class="orangtua">Putri Kedua dari<br>Bapak H. Mahdi & Ibu Hj. Saftiyah (Almh)</p>
+                <a href="https://www.instagram.com/anjar141?igsh=MTZxcmowbnp1Z2NxaA==" target="_blank" rel="noopener noreferrer" class="ig-link">
+                    <i class="fa-brands fa-instagram"></i> anjar141
+                </a>
+            </div>
+        </section>
+
+        <!-- HALAMAN: MEMPELAI PRIA -->
+        <section class="section fade-in mempelai-section">
+            <div class="mempelai-card">
+                <div class="foto-mempelai">
+                    <img src="image/foto-olan.jpeg" alt="Olan Maulana">
+                </div>
+                <h2 class="nama-mempelai">Olan</h2>
+                <h3 class="lengkap-mempelai">Olan Maulana, S.Kom</h3>
+                <p class="orangtua">Putra Keempat dari<br>Bapak Abdul Manan, S.Pd (Alm) & Ibu Bahronah</p>
+                <a href="https://www.instagram.com/_olanmaulana?igsh=dWliNTZjZmk4djI4&utm_source=qr" target="_blank" rel="noopener noreferrer" class="ig-link">
+                    <i class="fa-brands fa-instagram"></i> _olanmaulana
+                </a>
+            </div>
+        </section>
+
+        <!-- HALAMAN: JADWAL AKAD & RESEPSI -->
+        <section class="section fade-in jadwal-section">
+            <div class="jadwal-card">
+                <div class="resepsi">
+                    <i class="fa-solid fa-champagne-glasses fa-3x"></i>
+                    <h3>Tasyakuran Pernikahan</h3>
+                    <p><strong>Minggu, 05 Juli 2026</strong></p>
+                    <p><strong>Pukul 08.00 WIB sd Selesai</strong></p>
+                    <p><strong>Kediaman Mempelai Pria</strong><br>
+                      Kp. Kernaden RT/RW 002/002<br>
+                       Desa Ukirsari Kec. Bojonegara</p>
+                    <button class="btn-peta">Open Google Maps</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN: RSVP & HITUNG MUNDUR -->
+        <section class="section fade-in rsvp-section">
+            <div class="rsvp-card">
+                <h2>RSVP</h2>
+                <div class="countdown">
+                    <div class="time-box"><span id="hari">0</span><small>Hari</small></div>
+                    <div class="time-box"><span id="jam">0</span><small>Jam</small></div>
+                    <div class="time-box"><span id="menit">0</span><small>Menit</small></div>
+                    <div class="time-box"><span id="detik">0</span><small>Detik</small></div>
+                </div>
+                <p class="info-rsvp">Sampaikan do'a atau salam kepada pengantin dan konfirmasi kehadiran.</p>
+                <button id="btnBukaRsvp" class="btn-rsvp">Kirim Ucapan RSVP</button>
+            </div>
+        </section>
+
+        <!-- ✅ HANYA 1 FORM RSVP TANPA BAGIAN TAMBAHAN -->
+        <div id="formRsvpSection" class="rsvp-modal hidden">
+            <div class="rsvp-modal-content">
+                <!-- Tombol Tutup -->
+                <button id="tutupFormRsvp" class="tutup-form">&times;</button>
+
+                <h2>Konfirmasi Kehadiran</h2>
+                <form id="formRsvp" class="form-rsvp">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" id="namaUcapan" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Status Kehadiran</label>
+                        <select id="statusUcapan" required>
+                            <option value="">-- Pilih Salah Satu --</option>
+                            <option value="✅ Akan Hadir">✅ Akan Hadir</option>
+                            <option value="❌ Tidak Dapat Hadir">❌ Tidak Dapat Hadir</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ucapan & Doa</label>
+                        <textarea id="teksUcapan" rows="4" placeholder="Tulis doa dan ucapan selamat..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-kirim-ucapan">Kirim ke WhatsApp</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- HALAMAN: LOVE STORY -->
+        <section class="section fade-in story-section">
+            <div class="story-card">
+                <h2 class="judul-story">Perjalanan Kami</h2>
+                <div class="bagian-story">
+                    <h3>Awal Pertemuan</h3>
+                    <p>Agustus 2022: Di tahun yang sederhana itu, kami dipertemukan tanpa rencana. Bukan pertemuan yang penuh drama, tapi cukup untuk menumbuhkan rasa yang perlahan berubah menjadi doa.</p>
+                </div>
+                <div class="bagian-story">
+                    <h3>Menjalin Hubungan</h3>
+                    <p>Pertemuan itu berkembang menjadi kisah yang kami rawat perlahan. Kami menjalin hubungan yang dipenuhi proses belajar dan bertumbuh tentang kepercayaan, pengertian, dan bagaimana saling menjaga.</p>
+                </div>
+                <div class="bagian-story">
+                    <h3>Lamaran</h3>
+                    <p>11 April 2026 : Setelah bertahun-tahun saling mengenal dan belajar tentang arti sabar dan pengertian, ia datang membawa niat tulus bersama restu kedua orang tuanya. Hari itu menjadi saksi bisu, ketika dua hati menyatukan harapan dalam ridha keluarga dan bimbingan-Nya.</p>
+                </div>
+                <div class="bagian-story">
+                    <h3>Hari Bahagia</h3>
+                    <p>01 Juli 2026 : Akhirnya, kami melangkah ke hari yang selama ini kami panjatkan dalam doa. Bukan karena waktu yang panjang, tapi karena keyakinan yang kuat bahwa cinta yang diridhoi Allah pasti akan menemukan jalannya.</p>
+                </div>
+                <div class="bagian-story">
+                    <h3>Tasyakuran Pernikahan</h3>
+                    <p>05 Juli 2026 : Sebagai wujud rasa syukur yang tak terhingga kepada Allah SWT atas segala nikmat dan karunia-Nya, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara tasyakuran pernikahan kami. Semoga kebersamaan ini senantiasa diberkahi, dilimpahkan rezeki, dan menjadi keluarga yang sakinah, mawaddah, dan warahmah.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN: GALERI FOTO -->
+        <section class="section fade-in galeri-section">
+            <h2 class="judul-galeri">Kenangan Kami</h2>
+            <div class="galeri-grid">
+                <div class="galeri-item"><img src="image/foto-kenangan1.JPG" alt="Kenangan 1"></div>
+                <div class="galeri-item"><img src="image/foto-kenangan2.JPG" alt="Kenangan 2"></div>
+                <div class="galeri-item"><img src="image/foto-kenangan3.JPG" alt="Kenangan 3"></div>
+                <div class="galeri-item"><img src="image/foto-kenangan4.jpg" alt="Kenangan 4"></div>
+                <div class="galeri-item"><img src="image/foto-kenangan5.JPG" alt="Kenangan 5"></div>
+                <div class="galeri-item"><img src="image/foto-kenangan6.JPG" alt="Kenangan 6"></div>
+            </div>
+        </section>
+
+        <!-- HALAMAN: WEDDING GIFT -->
+        <section class="section fade-in gift-section">
+            <div class="gift-card">
+                <h2>Wedding Gift</h2>
+                <p class="teks-gift">Terima kasih atas doa restu dan kebaikan hati Anda. Jika berkenan memberikan tanda kasih, dapat melalui cara berikut:</p>
+                <div class="tab-gift">
+                    <button id="tabCashless" class="tab-btn aktif">Transfer Bank</button>
+                    <button id="tabAlamat" class="tab-btn">Kirim Kado</button>
+                </div>
+                <div id="isiCashless" class="isi-tab aktif">
+                    <div class="rekening">
+                        <img src="image/foto-mandiri.png" alt="Bank Mandiri" loading="lazy">
+                        <div class="info-rek">
+                            <p class="no-rek">1630011235432</p>
+                            <p class="nama-pemilik">OLAN MAULANA</p>
+                        </div>
+                        <button class="btn-salin" data-teks="1630011235432">Salin No. Rekening</button>
+                    </div>
+                
+                    <div class="rekening">
+                        <img src="image/foto-bni.png" alt="BNI" loading="lazy">
+                        <div class="info-rek">
+                            <p class="no-rek">1926785592</p>
+                            <p class="nama-pemilik">ANJAR JANNAH</p>
+                        </div>
+                        <button class="btn-salin" data-teks="1926785592">Salin No. Rekening</button>
+                    </div>
+                </div>
+                <div id="isiAlamat" class="isi-tab">
+                    <h3>Alamat Pengiriman</h3>
+                    <p>Kp. Kernaden RT/RW 002/002 Desa Ukirsari<br>Bojonegara - Serang Banten</p>
+                    <button class="btn-salin" data-teks="Kp. Kernaden RT/RW 002/002 Desa Ukirsari, Kecamatan Bojonegara, Kabupaten Serang, Banten">Salin Alamat</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALAMAN: PENUTUP -->
+        <section class="section fade-in penutup-section">
+            <div class="penutup-card">
+                <img src="image/foto-akhir.jpeg" alt="Anjar & Olan" class="foto-penutup">
+                <p class="teks-penutup">
+                    Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.
+                </p>
+                <p class="salam-penutup">Hormat Kami Yang Mengundang</p>
+                <h2 class="nama-penutup">Anjar & Olan</h2>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MODAL GALERI -->
+    <div id="galeriModal" class="galeri-modal">
+        <span class="modal-tutup">&times;</span>
+        <button class="nav-btn prev-btn">&lsaquo;</button>
+        <img class="modal-gambar" id="gambarModal" src="" alt="Lihat Foto">
+        <button class="nav-btn next-btn">&rsaquo;</button>
+    </div>
+
+    <!-- Musik Latar -->
+    <div class="audio-control">
+        <i id="audioIcon" class="fa fa-volume-up"></i>
+    </div>
+    <audio id="bgMusic" loop preload="auto">
+        <source src="musik_instrumen/lagu_bersamamu.mp3" type="audio/mpeg">
+        Browser tidak mendukung pemutar musik.
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
